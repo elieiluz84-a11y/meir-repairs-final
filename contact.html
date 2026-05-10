@@ -3,32 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>צור קשר והצהרת נגישות – מאיר PRO REPAIR</title>
+    <title>צור קשר והצהרת נגישות | מאיר PRO REPAIR</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
-    <div class="accessibility-tool">
-        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
-        <div class="acc-menu" id="accMenu">
-            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
-            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
-            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
-        </div>
-    </div>
-
     <header>
         <div class="container">
             <nav>
-                <div class="logo"><i data-lucide="wrench"></i> מאיר <span>PRO REPAIR</span></div>
+                <div class="logo">מאיר <i data-lucide="wrench"></i> <span>PRO REPAIR</span></div>
                 <ul class="nav-links">
-                    <li><a href="index.html">בית</a></li>
+                    <li><a href="index.html">דף הבית</a></li>
                     <li><a href="about.html">אודות</a></li>
-                    <li><a href="services-bikes.html">אופניים ו-BMX</a></li>
-                    <li><a href="services-scooters.html">קורקינטים</a></li>
-                    <li><a href="services-batteries.html">סוללות</a></li>
+                    <li><a href="bikes.html">אופניים ו-BMX</a></li>
+                    <li><a href="scooters.html">קורקינטים</a></li>
+                    <li><a href="batteries.html">סוללות</a></li>
                     <li><a href="gallery.html">גלריה</a></li>
                     <li><a href="articles.html">מאמרים</a></li>
                     <li><a href="contact.html" class="active">צור קשר</a></li>
@@ -40,22 +30,28 @@
     <div class="page-header">
         <div class="container">
             <h1>צור קשר והצהרת נגישות</h1>
+            <p>אנחנו כאן לכל שאלה, תיקון או ייעוץ מקצועי.</p>
         </div>
     </div>
 
     <section class="section">
         <div class="container">
             <div class="grid">
-                <div>
-                    <h2>הצהרת נגישות</h2>
-                    <p style="margin-top: 20px;">אתר מאיר PRO REPAIR הונגש במלואו לכל 8 דפיו. אנו מחויבים למתן שירות נגיש ושוויוני לכל לקוחותינו.</p>
+                <div class="card">
+                    <h2 style="margin-bottom: 25px;">הצהרת נגישות</h2>
+                    <p>אתר מאיר PRO REPAIR הונגש במלואו לכל 8 דפיו. אנו רואים חשיבות עליונה במתן שירות שוויוני ונגיש לכלל האוכלוסייה.</p>
+                    <ul style="margin-top: 25px; list-style: none;">
+                        <li style="margin-bottom: 12px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> תאימות לקוראי מסך (ARIA).</li>
+                        <li style="margin-bottom: 12px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> ניווט מקלדת מלא.</li>
+                        <li style="margin-bottom: 12px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> תפריט נגישות לשינוי ניגודיות וגודל טקסט.</li>
+                    </ul>
                 </div>
-                <div>
-                    <h2>השאירו פרטים</h2>
-                    <form style="margin-top: 20px;">
-                        <input type="text" placeholder="שם מלא" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
-                        <input type="tel" placeholder="טלפון" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">שלח הודעה</button>
+                <div class="card">
+                    <h2 style="margin-bottom: 25px;">הזמנת שירות מהירה</h2>
+                    <form>
+                        <input type="text" placeholder="שם מלא" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid #e2e8f0; margin-bottom: 20px; font-size: 1rem;">
+                        <input type="tel" placeholder="מספר טלפון" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid #e2e8f0; margin-bottom: 20px; font-size: 1rem;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 18px;">שלח הודעה</button>
                     </form>
                 </div>
             </div>

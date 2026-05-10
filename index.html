@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאיר PRO REPAIR – מעבדה ניידת לכלי רכב חשמליים</title>
+    <title>מאיר PRO REPAIR – המעבדה הניידת לכלי רכב חשמליים</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- Accessibility -->
+    <!-- Accessibility Global -->
     <div class="accessibility-tool">
         <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
         <div class="acc-menu" id="accMenu">
@@ -35,70 +35,63 @@
                     <li><a href="articles.html">מאמרים</a></li>
                     <li><a href="contact.html">צור קשר</a></li>
                 </ul>
-                <a href="tel:0552936262" class="btn btn-primary"><i data-lucide="phone"></i> התקשרו</a>
+                <a href="tel:0552936262" class="btn btn-primary"><i data-lucide="phone"></i> 055-293-6262</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('meir_repairman.png'); background-size: cover; background-position: center;">
         <div class="container">
-            <h1>המעבדה הניידת המקצועית בישראל</h1>
-            <p>תיקון אופניים, קורקינטים וסוללות ליתיום עד הבית. 10 שנים של מומחיות ללא פשרות.</p>
+            <h1>מאיר – מומחה לתיקון כלי רכב חשמליים</h1>
+            <p>שירות VIP וניסיון של 10 שנים עד אליך הביתה. תיקון אופניים, קורקינטים וסוללות MASTER.</p>
             <div style="margin-top: 30px;">
-                <a href="contact.html" class="btn btn-primary">הזמן תיקון עכשיו</a>
-                <a href="https://wa.me/972552936262" class="btn btn-secondary" style="background: var(--whatsapp); color: white; margin-right: 15px;">דבר איתי בוואטסאפ</a>
+                <a href="contact.html" class="btn btn-primary">הזמן טכנאי עכשיו</a>
+                <a href="https://wa.me/972552936262" class="btn btn-secondary" style="background: var(--whatsapp); color: white; margin-right: 15px;">הודעה בוואטסאפ</a>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="section-title">
-                <h2>השירותים המקצועיים שלנו</h2>
-                <div class="underline"></div>
-            </div>
             <div class="grid">
                 <div class="service-card">
-                    <img src="bmx_repair.png" alt="תיקון אופניים" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <img src="bmx_repair.png" alt="תיקון אופניים" style="width:100%; border-radius: 15px;">
                     <h3>אופניים ו-BMX</h3>
-                    <p>טיפול במערכות בלמים, הילוכים, ושלדות אופני פעלולים.</p>
-                    <a href="services-bikes.html" style="color: var(--primary); font-weight: bold; display: block; margin-top: 15px;">למידע נוסף ←</a>
+                    <a href="services-bikes.html" class="btn" style="margin-top: 20px; border: 1px solid var(--primary);">לדף השירות ←</a>
                 </div>
                 <div class="service-card">
-                    <img src="motor_gear_repair.png" alt="תיקון קורקינט" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <img src="motor_gear_repair.png" alt="תיקון קורקינט" style="width:100%; border-radius: 15px;">
                     <h3>קורקינטים והשכרות</h3>
-                    <p>החלפת בקרים, גירים, סנסורים ושירות השכרות פרימיום.</p>
-                    <a href="services-scooters.html" style="color: var(--primary); font-weight: bold; display: block; margin-top: 15px;">למידע נוסף ←</a>
+                    <a href="services-scooters.html" class="btn" style="margin-top: 20px; border: 1px solid var(--primary);">לדף השירות ←</a>
                 </div>
                 <div class="service-card">
-                    <img src="battery_repair.png" alt="בניית סוללות" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
-                    <h3>סוללות ואלקטרוניקה</h3>
-                    <p>בנייה ושיפוץ סוללות ליתיום MASTER בטכנולוגיה מתקדמת.</p>
-                    <a href="services-batteries.html" style="color: var(--primary); font-weight: bold; display: block; margin-top: 15px;">למידע נוסף ←</a>
+                    <img src="battery_repair.png" alt="בניית סוללות" style="width:100%; border-radius: 15px;">
+                    <h3>סוללות MASTER</h3>
+                    <a href="services-batteries.html" class="btn" style="margin-top: 20px; border: 1px solid var(--primary);">לדף השירות ←</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/972552936262" class="floating-whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/972552936262" class="floating-whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div>
                     <h3>מאיר PRO REPAIR</h3>
-                    <p>מעבדה ניידת לתיקון כלי רכב חשמליים.</p>
+                    <p>המעבדה הניידת המתקדמת ביותר.</p>
                 </div>
                 <div>
-                    <h4>קישורים</h4>
+                    <h4>ניווט באתר</h4>
                     <ul style="list-style: none;">
-                        <li><a href="index.html" style="color: white; text-decoration: none;">בית</a></li>
-                        <li><a href="articles.html" style="color: white; text-decoration: none;">מאמרים</a></li>
-                        <li><a href="contact.html" style="color: white; text-decoration: none;">נגישות</a></li>
+                        <li><a href="index.html" style="color: white;">בית</a></li>
+                        <li><a href="about.html" style="color: white;">אודות</a></li>
+                        <li><a href="gallery.html" style="color: white;">גלריה</a></li>
+                        <li><a href="contact.html" style="color: white;">נגישות וקשר</a></li>
                     </ul>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">© 2026 מאיר תיקונים. כל הזכויות שמורות.</p>
         </div>
     </footer>
 

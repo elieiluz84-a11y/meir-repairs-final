@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
+        <div class="acc-menu" id="accMenu">
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -30,7 +40,6 @@
     <div class="page-header">
         <div class="container">
             <h1>צור קשר והצהרת נגישות</h1>
-            <p>אנחנו כאן לכל שאלה, תיקון או ייעוץ מקצועי.</p>
         </div>
     </div>
 
@@ -39,19 +48,13 @@
             <div class="grid">
                 <div>
                     <h2>הצהרת נגישות</h2>
-                    <p style="margin-top: 20px;">אתר מאיר PRO REPAIR הונגש בהתאם לתקנות שוויון זכויות לאנשים עם מוגבלות. אנו רואים חשיבות עליונה במתן שירות שוויוני לכלל האוכלוסייה.</p>
-                    <ul style="margin-top: 20px; list-style: none;">
-                        <li><i data-lucide="check" style="color: var(--primary);"></i> תמיכה בניווט מקלדת מלא.</li>
-                        <li><i data-lucide="check" style="color: var(--primary);"></i> תפריט נגישות לשינוי ניגודיות וגודל טקסט.</li>
-                        <li><i data-lucide="check" style="color: var(--primary);"></i> תגיות ARIA לקוראי מסך.</li>
-                    </ul>
+                    <p style="margin-top: 20px;">אתר מאיר PRO REPAIR הונגש במלואו לכל 8 דפיו. אנו מחויבים למתן שירות נגיש ושוויוני לכל לקוחותינו.</p>
                 </div>
                 <div>
                     <h2>השאירו פרטים</h2>
                     <form style="margin-top: 20px;">
                         <input type="text" placeholder="שם מלא" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
                         <input type="tel" placeholder="טלפון" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px;">
-                        <textarea placeholder="איך נוכל לעזור?" style="width: 100%; padding: 15px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 15px; height: 100px;"></textarea>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">שלח הודעה</button>
                     </form>
                 </div>

@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
+        <div class="acc-menu" id="accMenu">
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -29,7 +39,7 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>הסיפור מאחורי מאיר PRO REPAIR</h1>
+            <h1>הסיפור של מאיר PRO REPAIR</h1>
             <div class="underline"></div>
         </div>
     </div>
@@ -38,12 +48,11 @@
         <div class="container">
             <div style="display: flex; gap: 50px; align-items: center; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
-                    <h2>10 שנים של מצוינות טכנית</h2>
-                    <p style="margin-top: 20px;">מאיר החל את דרכו מתוך אהבה לכלי רכב והנדסה. לאורך העשור האחרון, הוא הפך לאוטוריטה בתחום המיקרו-מוביליטי בישראל, עם התמחות מיוחדת במערכות חשמל מורכבות וסוללות ליתיום.</p>
-                    <p style="margin-top: 15px;">החזון של מאיר הוא להביא את רמת המעבדה הגבוהה ביותר ישירות ללקוח, תוך שמירה על אמינות, שקיפות ומקצועיות ללא פשרות.</p>
+                    <h2>מומחיות של 10 שנים בשטח</h2>
+                    <p style="margin-top: 20px;">מאיר הקים את המעבדה הניידת מתוך הבנה שתיקון כלי רכב חשמליים דורש דיוק של מעבדה ונוחות של שירות עד הבית. עם ניסיון עשיר בטיפול באופניים, קורקינטים וסוללות מכל הסוגים.</p>
                 </div>
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="bmx_repair.png" alt="מאיר בעבודה" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow-lg);">
+                    <img src="meir_repairman.png" alt="מאיר בעבודה" style="width: 100%; border-radius: 30px;">
                 </div>
             </div>
         </div>

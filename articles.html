@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
+        <div class="acc-menu" id="accMenu">
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -30,7 +40,6 @@
     <div class="page-header">
         <div class="container">
             <h1>מרכז ידע ומומחיות</h1>
-            <p>8 מאמרים מקצועיים שנכתבו על ידי מאיר עבור הרוכבים בישראל.</p>
         </div>
     </div>
 
@@ -38,36 +47,36 @@
         <div class="container">
             <div class="grid">
                 <div class="service-card">
-                    <h4>1. המשימה של מאיר: סטנדרט חדש בשירות</h4>
-                    <p>איך 10 שנות ניסיון מתורגמות לדיוק בכל הלחמה ותיקון.</p>
+                    <h4>1. המשימה של מאיר: שירות VIP</h4>
+                    <p>איך מאיר מביא את רמת המעבדה לשטח.</p>
                 </div>
                 <div class="service-card">
-                    <h4>2. עולם הסוללות: למה MASTER?</h4>
-                    <p>על ההבדל בין סוללה תעשייתית לבנייה אישית של מאיר.</p>
+                    <h4>2. בניית סוללות MASTER</h4>
+                    <p>התהליך המקצועי של מאיר לבניית סוללות ליתיום.</p>
                 </div>
                 <div class="service-card">
-                    <h4>3. אבחון תקלות בקר: המעבדה בכיס</h4>
-                    <p>איך מאיר מאתר תקלות אלקטרוניות מורכבות בשטח.</p>
+                    <h4>3. אבחון בקרים ואלקטרוניקה</h4>
+                    <p>איך מאיר מאתר תקלות מורכבות בשטח.</p>
                 </div>
                 <div class="service-card">
-                    <h4>4. שיפוץ מנועים: להחזיר את הכוח</h4>
-                    <p>הכל על החלפת גירים ושיפור ביצועי המנוע במעבדה הניידת.</p>
+                    <h4>4. שיפוץ מנועים וגירים</h4>
+                    <p>הכל על החלפת גירים ושיפור ביצועי המנוע.</p>
                 </div>
                 <div class="service-card">
-                    <h4>5. בטיחות ב-BMX: דגשי תחזוקה</h4>
-                    <p>המדריך של מאיר לשמירה על אופני פעלולים במצב מושלם.</p>
+                    <h4>5. בטיחות ב-BMX</h4>
+                    <p>המדריך של מאיר לשמירה על אופני פעלולים.</p>
                 </div>
                 <div class="service-card">
-                    <h4>6. תחזוקה מונעת: לחסוך אלפי שקלים</h4>
-                    <p>טיפים פשוטים של מאיר שימנעו תקלות יקרות בעתיד.</p>
+                    <h4>6. תחזוקה מונעת לכלי רכב חשמליים</h4>
+                    <p>טיפים פשוטים של מאיר שימנעו תקלות יקרות.</p>
                 </div>
                 <div class="service-card">
-                    <h4>7. למה מעבדה ניידת? היעילות שבשירות</h4>
-                    <p>היתרונות של תיקון במקום העבודה או בבית על פני המתנה בחנות.</p>
+                    <h4>7. למה מעבדה ניידת?</h4>
+                    <p>היתרונות של תיקון במקום העבודה או בבית.</p>
                 </div>
                 <div class="service-card">
-                    <h4>8. עתיד התיקונים בישראל</h4>
-                    <p>החזון של מאיר להפיכת ענף התיקונים למקצועי ושקוף יותר.</p>
+                    <h4>8. העתיד של מאיר PRO REPAIR</h4>
+                    <p>החזון של מאיר להפיכת הענף למקצועי יותר.</p>
                 </div>
             </div>
         </div>

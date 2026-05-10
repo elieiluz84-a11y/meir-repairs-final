@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
+        <div class="acc-menu" id="accMenu">
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -30,7 +40,6 @@
     <div class="page-header">
         <div class="container">
             <h1>תיקון קורקינטים חשמליים והשכרות</h1>
-            <p>מומחיות בתיקון מנועים, בקרים ושירות השכרה פרימיום.</p>
         </div>
     </div>
 
@@ -38,16 +47,14 @@
         <div class="container">
             <div class="grid">
                 <div class="service-card">
-                    <h3>החלפת גיר במנוע</h3>
-                    <p>פתיחת מנוע, החלפת גלגלי שיניים ושמירה על נסיעה שקטה ועוצמתית.</p>
+                    <img src="motor_gear_repair.png" alt="תיקון גיר" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>שיפוץ מנועים וגירים</h3>
+                    <p>החלפת גלגלי שיניים ושיפוץ מנועי קורקינט.</p>
                 </div>
                 <div class="service-card">
-                    <h3>תיקון בקרים וסנסורים</h3>
-                    <p>אבחון תקלות חשמליות, החלפת בקרים וכיול סנסורים Hall Sensors לביצועים אופטימליים.</p>
-                </div>
-                <div class="service-card">
-                    <h3>שירות השכרות</h3>
-                    <p>השכרת אופניים וקורקינטים חשמליים במצב מעולה לטווח קצר וארוך.</p>
+                    <img src="mobile_lab.png" alt="מעבדה" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>השכרת קורקינטים פרימיום</h3>
+                    <p>כלים במצב מעולה להשכרה קצרת וארוכת טווח.</p>
                 </div>
             </div>
         </div>

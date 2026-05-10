@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
+        <div class="acc-menu" id="accMenu">
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -30,7 +40,6 @@
     <div class="page-header">
         <div class="container">
             <h1>בניית סוללות MASTER ואלקטרוניקה</h1>
-            <p>המומחיות הגבוהה ביותר בישראל לבנייה ושיפוץ סוללות ליתיום.</p>
         </div>
     </div>
 
@@ -38,20 +47,10 @@
         <div class="container">
             <div class="grid">
                 <div class="service-card">
-                    <h3>בניית סוללות בהתאמה אישית</h3>
-                    <p>תכנון מארזים, בחירת תאי פרימיום והלחמות מקצועיות לכל סוגי הכלים.</p>
+                    <img src="battery_repair.png" alt="בניית סוללה" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>בניית סוללות MASTER</h3>
+                    <p>בנייה ושיפוץ סוללות ליתיום בטכנולוגיה הגבוהה ביותר.</p>
                 </div>
-                <div class="service-card">
-                    <h3>תיקון ושיפוץ סוללות</h3>
-                    <p>החלפת תאים תקולים, איזון מתחים ושדרוג קיבולת לסוללות קיימות.</p>
-                </div>
-                <div class="service-card">
-                    <h3>אבחון דיאגנוסטי</h3>
-                    <p>בדיקת עומסים, מדידת קיבולת אמתית ופתרון בעיות ניתוק ופריקה מהירה.</p>
-                </div>
-            </div>
-            <div style="margin-top: 50px; text-align: center;">
-                <img src="battery_repair.png" alt="בניית סוללה" style="width: 100%; max-width: 800px; border-radius: 30px; box-shadow: var(--shadow-lg);">
             </div>
         </div>
     </section>

@@ -3,319 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאיר – תיקונים עד בית הלקוח | אופניים, קורקינטים וסוללות</title>
-    <meta name="description" content="שירות תיקון אופניים וקורקינטים עד הבית. 10 שנות ניסיון, בניית סוללות, תיקון תקלות חשמל ומכירת אביזרים. מחירים הוגנים ושירות מקצועי.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700;800&family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <title>מאיר PRO REPAIR – מעבדה ניידת לכלי רכב חשמליים</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
 
-    <!-- Accessibility Toolbar -->
+    <!-- Accessibility -->
     <div class="accessibility-tool">
-        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות" title="תפריט נגישות">
-            <i data-lucide="accessibility"></i>
-        </button>
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
         <div class="acc-menu" id="accMenu">
-            <h4>תפריט נגישות</h4>
-            <div class="acc-option" onclick="toggleContrast()">
-                <i data-lucide="contrast"></i> ניגודיות גבוהה
-            </div>
-            <div class="acc-option" onclick="toggleLargeFont()">
-                <i data-lucide="type"></i> הגדלת טקסט
-            </div>
-            <div class="acc-option" onclick="underlineLinks()">
-                <i data-lucide="link"></i> הדגשת קישורים
-            </div>
-            <div class="acc-option" onclick="resetAcc()">
-                <i data-lucide="refresh-cw"></i> איפוס הגדרות
-            </div>
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס</div>
         </div>
     </div>
 
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/972552936262" class="floating-whatsapp" target="_blank" title="שלחו וואטסאפ" aria-label="פתיחת שיחה בוואטסאפ">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <header id="header">
+    <header>
         <div class="container">
-            <nav role="navigation" aria-label="תפריט ראשי">
-                <div class="logo">
-                    <i data-lucide="wrench"></i>
-                    מאיר <span>PRO REPAIR</span>
-                </div>
+            <nav>
+                <div class="logo"><i data-lucide="wrench"></i> מאיר <span>PRO REPAIR</span></div>
                 <ul class="nav-links">
-                    <li><a href="#services" aria-label="מעבר לשירותים">שירותים</a></li>
-                    <li><a href="#why-us" aria-label="מעבר ללמה אנחנו">למה אנחנו</a></li>
-                    <li><a href="#gallery" aria-label="מעבר לגלריה">גלריה</a></li>
-                    <li><a href="#contact" aria-label="מעבר לצור קשר">צור קשר</a></li>
+                    <li><a href="index.html" class="active">בית</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="services-bikes.html">אופניים ו-BMX</a></li>
+                    <li><a href="services-scooters.html">קורקינטים</a></li>
+                    <li><a href="services-batteries.html">סוללות</a></li>
+                    <li><a href="gallery.html">גלריה</a></li>
+                    <li><a href="articles.html">מאמרים</a></li>
+                    <li><a href="contact.html">צור קשר</a></li>
                 </ul>
-                <a href="tel:0552936262" class="btn-call-header" aria-label="התקשרו עכשיו 0 5 5 2 9 3 6 2 6 2">
-                    <i data-lucide="phone"></i> 055-293-6262
-                </a>
+                <a href="tel:0552936262" class="btn btn-primary"><i data-lucide="phone"></i> התקשרו</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home" role="banner">
+    <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>מאיר – מעבדה ניידת לתיקון כלי רכב חשמליים</h1>
-                <p>המומחים לתיקון אופניים, קורקינטים, בניית סוללות ושיפוץ מנועים. שירות VIP עד בית הלקוח עם 10 שנות ניסיון וציוד מעבדה מתקדם.</p>
-                <div class="hero-btns">
-                    <a href="https://wa.me/972552936262" class="btn btn-secondary">
-                        <i class="fab fa-whatsapp"></i> ייעוץ בוואטסאפ
-                    </a>
-                    <a href="tel:0552936262" class="btn btn-primary">
-                        <i data-lucide="phone-call"></i> הזמנת טכנאי עכשיו
-                    </a>
-                </div>
-                <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px; font-size: 0.9rem; opacity: 0.8;">
-                    <span><i data-lucide="check-circle" style="vertical-align: middle; color: var(--primary-light);"></i> 10 שנות מוניטין</span>
-                    <span><i data-lucide="shield-check" style="vertical-align: middle; color: var(--primary-light);"></i> אחריות על כל תיקון</span>
-                    <span><i data-lucide="clock" style="vertical-align: middle; color: var(--primary-light);"></i> שירות מהיר עד הבית</span>
-                </div>
+            <h1>המעבדה הניידת המקצועית בישראל</h1>
+            <p>תיקון אופניים, קורקינטים וסוללות ליתיום עד הבית. 10 שנים של מומחיות ללא פשרות.</p>
+            <div style="margin-top: 30px;">
+                <a href="contact.html" class="btn btn-primary">הזמן תיקון עכשיו</a>
+                <a href="https://wa.me/972552936262" class="btn btn-secondary" style="background: var(--whatsapp); color: white; margin-right: 15px;">דבר איתי בוואטסאפ</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="section" id="services">
+    <section class="section">
         <div class="container">
             <div class="section-title">
-                <h2>התמחות מקצועית במעבדה הניידת</h2>
+                <h2>השירותים המקצועיים שלנו</h2>
                 <div class="underline"></div>
             </div>
-            <div class="services-grid">
+            <div class="grid">
                 <div class="service-card">
-                    <div class="service-icon"><i data-lucide="bike"></i></div>
-                    <h3>אופניים חשמליים ו-BMX</h3>
-                    <p>תיקון מכלולי שלדה, מערכות בלימה (דיסקים/רפידות), החלפת צמיגים וטיפול באופני BMX ופעלולים.</p>
+                    <img src="bmx_repair.png" alt="תיקון אופניים" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>אופניים ו-BMX</h3>
+                    <p>טיפול במערכות בלמים, הילוכים, ושלדות אופני פעלולים.</p>
+                    <a href="services-bikes.html" style="color: var(--primary); font-weight: bold; display: block; margin-top: 15px;">למידע נוסף ←</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i data-lucide="zap"></i></div>
-                    <h3>מערכות בקרים וחשמל</h3>
-                    <p>אבחון והחלפת בקרים, תיקון צמות חשמל, החלפת סנסורים (Hall Sensors) ופתרון תקלות תקשורת.</p>
+                    <img src="motor_gear_repair.png" alt="תיקון קורקינט" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>קורקינטים והשכרות</h3>
+                    <p>החלפת בקרים, גירים, סנסורים ושירות השכרות פרימיום.</p>
+                    <a href="services-scooters.html" style="color: var(--primary); font-weight: bold; display: block; margin-top: 15px;">למידע נוסף ←</a>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i data-lucide="settings"></i></div>
-                    <h3>שיפוץ מנועים וגירים</h3>
-                    <p>פתיחת מנועים, החלפת גלגלי שיניים (Gears), החלפת מיסבים ושיפור עוצמת המנוע.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i data-lucide="battery-charging"></i></div>
-                    <h3>בניית סוללות MASTER</h3>
-                    <p>תכנון ובניית סוללות ליתיום בקיבולת גבוהה, החלפת תאים ושיפוץ סוללות קיימות לכל סוגי הכלים.</p>
+                    <img src="battery_repair.png" alt="בניית סוללות" style="width:100%; border-radius: 15px; margin-bottom: 20px;">
+                    <h3>סוללות ואלקטרוניקה</h3>
+                    <p>בנייה ושיפוץ סוללות ליתיום MASTER בטכנולוגיה מתקדמת.</p>
+                    <a href="services-batteries.html" style="color: var(--primary); font-weight: bold; display: block; margin-top: 15px;">למידע נוסף ←</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="section" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <h2>מבט אל תוך המעבדה</h2>
-                <p>תיקונים מורכבים בביצוע מקצועי</p>
-                <div class="underline"></div>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600" alt="תיקון בקר חשמלי">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600" alt="הלחמת סוללות ליתיום">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-159742324403d-d1950e334464?auto=format&fit=crop&q=80&w=600" alt="שיפוץ מנוע וגירים">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=600" alt="תיקון אופני BMX">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600" alt="אבחון סנסורים">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1544724569-5f546fa602b5?auto=format&fit=crop&q=80&w=600" alt="השכרת כלים פרימיום">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Articles / Meir Expert Series -->
-    <section class="section" id="articles" style="background: var(--accent);">
-        <div class="container">
-            <div class="section-title">
-                <h2>מאיר - סדרת המומחה</h2>
-                <p>8 מאמרים על עולם התיקונים והחזון של מאיר</p>
-                <div class="underline"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">1. החזון של מאיר: שירות VIP לכל רוכב</h4>
-                    <p style="font-size: 0.9rem;">למה מאיר החליט להוציא את המעבדה אל השטח ואיך זה משנה את חיי הלקוחות.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">2. בניית סוללות: המדע שמאחורי האנרגיה</h4>
-                    <p style="font-size: 0.9rem;">מאיר מסביר על תהליך בחירת התאים והלחמות ה-Spot Welding המקצועיות.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">3. תיקון בקרים: לא הכל חייב להחליף</h4>
-                    <p style="font-size: 0.9rem;">איך הידע הטכני של מאיר מאפשר תיקון רכיבים בלוח הבקר וחוסך לכם כסף.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">4. 10 שנים בשטח: הסיפורים של מאיר</h4>
-                    <p style="font-size: 0.9rem;">מהתיקון הראשון ועד להקמת המעבדה הניידת המתקדמת ביותר בישראל.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">5. תחזוקת מנועי גיר: הטיפים של המקצוענים</h4>
-                    <p style="font-size: 0.9rem;">מאיר משתף איך למנוע שחיקה של גלגלי השיניים במנוע ולשמור על שקט בנסיעה.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">6. בטיחות מעל הכל: תקני הבדיקה של מאיר</h4>
-                    <p style="font-size: 0.9rem;">למה כל כלי שעובר תחת הידיים של מאיר עובר סדרת בדיקות עומס ובטיחות.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4 solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">7. המעבדה הניידת: מה באמת יש בפנים?</h4>
-                    <p style="font-size: 0.9rem;">הצצה לכלים ולציוד הדיאגנוסטיקה שמאיר מביא איתו לכל קריאת שירות.</p>
-                </div>
-                <div class="service-card" style="text-align: right; padding: 25px; border-top: 4px solid var(--primary);">
-                    <h4 style="margin-bottom: 10px;">8. עתיד המיקרו-מוביליטי לפי מאיר</h4>
-                    <p style="font-size: 0.9rem;">לאן הולך תחום הקורקינטים והאופניים החשמליים ואיך מאיר נשאר בחזית הטכנולוגיה.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section" id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>מה הלקוחות אומרים</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"שירות מדהים! מאיר הגיע אליי הביתה תוך שעה ותיקן את הפנצ'ר בקורקינט בצ'יק. מחיר הוגן מאוד."</p>
-                    <p><strong>- דניאל כהן</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"בניתי אצל מאיר סוללה לאופניים חשמליים, העבודה נקייה ומקצועית והטווח גדל משמעותית. ממליץ בחום!"</p>
-                    <p><strong>- יוסי לוי</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"מקצוען אמיתי. תיקן לי את הבימבה החשמלית של הילדים שכולם אמרו שאי אפשר לתקן. תודה רבה!"</p>
-                    <p><strong>- שרה א.</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"החלפת בקר וגיר במנוע בוצעה במקצועיות שיא. האופניים נוסעים כמו חדשים. שירות אמין ומהיר."</p>
-                    <p><strong>- אבי מזרחי</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"שכרתי אופניים לחודש, הכלי היה במצב מצוין והשירות של מאיר היה מעל ומעבר לכל ציפייה."</p>
-                    <p><strong>- רונית ש.</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"הגעתי למאיר עם תקלת סנסורים מורכבת שאיש לא הצליח לפתור. הוא עלה על הבעיה תוך דקות. אלוף!"</p>
-                    <p><strong>- עידן ג.</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"החלפת רפידות ודיסקים במקום. שירות נוח מאוד שחוסך המון זמן. מחירים הוגנים ביותר."</p>
-                    <p><strong>- מיכל ד.</strong></p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"תיקון אופני ה-BMX של הבן שלי בוצע במהירות ובאיכות גבוהה. מאיר בחור לעניין ומאוד סבלני."</p>
-                    <p><strong>- בני ת.</strong></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>צרו קשר עכשיו</h2>
-                    <p>צריכים תיקון? יש לכם שאלה? אנחנו כאן בשבילכם.</p>
-                    <div style="margin-top: 30px;">
-                        <p><i data-lucide="phone" style="color: var(--primary); vertical-align: middle;"></i> <strong>טלפון:</strong> 055-293-6262</p>
-                        <p><i data-lucide="map-pin" style="color: var(--primary); vertical-align: middle;"></i> <strong>אזורי שירות:</strong> שירות עד בית הלקוח</p>
-                    </div>
-                </div>
-                <form id="contactForm">
-                    <h3>השאירו פרטים</h3>
-                    <input type="text" placeholder="שם מלא" required>
-                    <input type="tel" placeholder="מספר טלפון" required>
-                    <select required>
-                        <option value="">סוג התקלה</option>
-                        <option value="bike">תיקון אופניים</option>
-                        <option value="scooter">תיקון קורקינט</option>
-                        <option value="battery">בניית/תיקון סוללה</option>
-                        <option value="puncture">פנצ'ר</option>
-                        <option value="other">אחר</option>
-                    </select>
-                    <textarea placeholder="תיאור קצר של התקלה" rows="4"></textarea>
-                    <button type="submit">שלח עכשיו</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <a href="https://wa.me/972552936262" class="floating-whatsapp"><i class="fab fa-whatsapp"></i></a>
 
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h3>מאיר תיקונים</h3>
-                    <p>המומחים שלכם לתיקון אופניים, קורקינטים ובניית סוללות עד הבית.</p>
+                    <h3>מאיר PRO REPAIR</h3>
+                    <p>מעבדה ניידת לתיקון כלי רכב חשמליים.</p>
                 </div>
                 <div>
-                    <h4>שירותים</h4>
-                    <ul>
-                        <li>תיקון אופניים</li>
-                        <li>תיקון קורקינטים</li>
-                        <li>בניית סוללות</li>
-                        <li>תיקון פנצ'רים</li>
+                    <h4>קישורים</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html" style="color: white; text-decoration: none;">בית</a></li>
+                        <li><a href="articles.html" style="color: white; text-decoration: none;">מאמרים</a></li>
+                        <li><a href="contact.html" style="color: white; text-decoration: none;">נגישות</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4>צרו קשר</h4>
-                    <p>טלפון: 055-293-6262</p>
-                    <div style="display: flex; gap: 15px; margin-top: 15px; font-size: 1.5rem;">
-                        <a href="https://www.facebook.com/share/1CLau5p3az/" target="_blank" title="עקבו אחרינו בפייסבוק"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/972552936262" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 מאיר – תיקונים עד בית הלקוח. כל הזכויות שמורות.</p>
-            </div>
+            <p style="text-align: center; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">© 2026 מאיר תיקונים. כל הזכויות שמורות.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

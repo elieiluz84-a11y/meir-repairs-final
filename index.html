@@ -19,25 +19,47 @@
 </head>
 <body>
 
+    <!-- Accessibility Toolbar -->
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות" title="תפריט נגישות">
+            <i data-lucide="accessibility"></i>
+        </button>
+        <div class="acc-menu" id="accMenu">
+            <h4>תפריט נגישות</h4>
+            <div class="acc-option" onclick="toggleContrast()">
+                <i data-lucide="contrast"></i> ניגודיות גבוהה
+            </div>
+            <div class="acc-option" onclick="toggleLargeFont()">
+                <i data-lucide="type"></i> הגדלת טקסט
+            </div>
+            <div class="acc-option" onclick="underlineLinks()">
+                <i data-lucide="link"></i> הדגשת קישורים
+            </div>
+            <div class="acc-option" onclick="resetAcc()">
+                <i data-lucide="refresh-cw"></i> איפוס הגדרות
+            </div>
+        </div>
+    </div>
+
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/972552936262" class="floating-whatsapp" target="_blank" title="שלחו וואטסאפ">
+    <a href="https://wa.me/972552936262" class="floating-whatsapp" target="_blank" title="שלחו וואטסאפ" aria-label="פתיחת שיחה בוואטסאפ">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <header id="header">
         <div class="container">
-            <nav>
+            <nav role="navigation" aria-label="תפריט ראשי">
                 <div class="logo">
                     <i data-lucide="wrench"></i>
-                    מאיר <span>תיקונים</span>
+                    מאיר <span>PRO REPAIR</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#services">שירותים</a></li>
-                    <li><a href="#why-us">למה אנחנו</a></li>
-                    <li><a href="#gallery">גלריה</a></li>
-                    <li><a href="#contact">צור קשר</a></li>
+                    <li><a href="#services" aria-label="מעבר לשירותים">שירותים</a></li>
+                    <li><a href="#why-us" aria-label="מעבר ללמה אנחנו">למה אנחנו</a></li>
+                    <li><a href="#gallery" aria-label="מעבר לגלריה">גלריה</a></li>
+                    <li><a href="#contact" aria-label="מעבר לצור קשר">צור קשר</a></li>
                 </ul>
-                <a href="tel:0552936262" class="btn-call-header">
+                <a href="tel:0552936262" class="btn-call-header" aria-label="התקשרו עכשיו 0 5 5 2 9 3 6 2 6 2">
                     <i data-lucide="phone"></i> 055-293-6262
                 </a>
             </nav>
@@ -45,7 +67,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" role="banner">
         <div class="container">
             <div class="hero-content">
                 <h1>שירות מהיר, מקצועי ואמין עד הבית</h1>

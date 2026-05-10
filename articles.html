@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מאמרים ומדריכים מקצועיים | מאיר PRO REPAIR</title>
+    <title>מרכז ידע מורחב | מאיר PRO REPAIR</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/font-awesome.min.css">
 </head>
 <body>
+    <!-- Accessibility Global -->
+    <div class="accessibility-tool">
+        <button class="acc-btn" id="accBtn" aria-label="תפריט נגישות"><i data-lucide="accessibility"></i></button>
+        <div class="acc-menu" id="accMenu">
+            <div class="acc-option" onclick="toggleContrast()"><i data-lucide="contrast"></i> ניגודיות גבוהה</div>
+            <div class="acc-option" onclick="toggleLargeFont()"><i data-lucide="type"></i> הגדלת טקסט</div>
+            <div class="acc-option" onclick="resetAcc()"><i data-lucide="refresh-cw"></i> איפוס הגדרות</div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -29,49 +40,101 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>מרכז הידע של מאיר</h1>
-            <p>מדריכי מומחה לתחזוקה ותיקון כלי רכב חשמליים.</p>
+            <h1>מרכז ידע ומומחיות מורחב</h1>
+            <p>8 מדריכי מומחה שנכתבו עבורכם מתוך 10 שנות ניסיון בשטח.</p>
         </div>
     </div>
 
     <section class="section">
         <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <h4>1. המדריך המלא לתחזוקת סוללת ליתיום</h4>
-                    <p>איך להאריך את חיי הסוללה ב-40% בעזרת טעינה נכונה ואיזון מתחים.</p>
-                </div>
-                <div class="card">
-                    <h4>2. למה המנוע עושה רעש? הכל על גירים</h4>
-                    <p>מאיר מסביר מתי כדאי לפתוח מנוע ולגרז גלגלי שיניים לפני שיהיה מאוחר מדי.</p>
-                </div>
-                <div class="card">
-                    <h4>3. בקרים חכמים: המוח של הקורקינט</h4>
-                    <p>ההבדל בין בקר פשוט לבקר פרימיום ואיך זה משפיע על המומנט שלכם.</p>
-                </div>
-                <div class="card">
-                    <h4>4. בטיחות בבלימה: דיסקים או רפידות?</h4>
-                    <p>כל מה שצריך לדעת על מערכות בלימה הידראוליות באופניים חשמליים.</p>
-                </div>
-                <div class="card">
-                    <h4>5. בניית סוללה MASTER – שלב אחר שלב</h4>
-                    <p>הצצה לתהליך הייצור המוקפד של מאיר הכולל הלחמות Spot Welding ובקרת איכות.</p>
-                </div>
-                <div class="card">
-                    <h4>6. תיקון BMX: לא רק פעלולים</h4>
-                    <p>תחזוקה נכונה של אופני BMX בשביל לשמור על ביצועים ובטיחות.</p>
-                </div>
-                <div class="card">
-                    <h4>7. פתרון בעיות "גמגום" במנוע</h4>
-                    <p>איך מאיר מאבחן תקלות בסנסורים (Hall Sensors) ומתקן אותן בשטח.</p>
-                </div>
-                <div class="card">
-                    <h4>8. עתיד המעבדות הניידות בישראל</h4>
-                    <p>החזון של מאיר PRO REPAIR להובלת ענף התיקונים המקצועי.</p>
-                </div>
+            <div style="max-width: 900px; margin: 0 auto;">
+                
+                <!-- Article 1 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">1. המדריך המלא להארכת חיי סוללת ליתיום</h2>
+                    <p>סוללת הליתיום היא הלב של הכלי החשמלי שלכם, והיא גם הרכיב היקר ביותר. כדי לשמור עליה, חשוב להבין שסוללות ליתיום אינן אוהבות פריקה מלאה. מומלץ להטעין את הסוללה כשהיא מגיעה ל-20% ולא לחכות שתתרוקן לחלוטין.</p>
+                    <p style="margin-top: 15px;">בנוסף, טמפרטורה היא גורם קריטי. הימנעו מהשארת הכלי בשמש ישירה לזמן ממושך, שכן חום גבוה פוגע בכימיה של התאים ומקצר את חייהם באופן משמעותי.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> פעם בחודש, בצעו טעינה רציפה של 12 שעות כדי לאפשר ל-BMS לאזן את המתחים בין התאים בסוללה.
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">2. רעשים מהמנוע? הכל על שיפוץ גירים</h2>
+                    <p>אם התחלתם לשמוע רעשי חריקה או "תיקתוקים" מהמנוע בזמן נסיעה, רוב הסיכויים שגלגלי השיניים (Gears) הפנימיים זקוקים לטיפול. המנוע החשמלי עובד בעומס רב, והגירים העשויים ניילון קשיח או מתכת נוטים להישחק עם הזמן.</p>
+                    <p style="margin-top: 15px;">הזנחה של רעשים אלו עלולה להוביל לתקיעת המנוע ולנזק בלתי הפיך. בשיפוץ מנוע מקצועי, אנחנו פותחים את המארז, מנקים שאריות שומן ישן ומתקינים גירים חדשים ומגורזים בסיליקון איכותי.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> אל תתעלמו מרעש קטן. טיפול מונע בגיר עולה רבע מהחלפת מנוע שלם.
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">3. אבחון תקלות בקר: המוח שמאחורי הנסיעה</h2>
+                    <p>הבקר (Controller) הוא המוח שמנהל את זרימת האנרגיה מהסוללה למנוע. תקלות בבקר יכולות להתבטא בחוסר תגובה של הכלי, "קפיצות" בזמן האצה או כיבוי פתאומי תחת עומס. לעיתים קרובות הבעיה נובעת מחימום יתר של רכיבי ה-MOSFET.</p>
+                    <p style="margin-top: 15px;">במעבדה הניידת שלנו, אנחנו מבצעים דיאגנוסטיקה ממוחשבת לבקר. במקרים רבים ניתן לתקן את הבקר על ידי הלחמת רכיבים חדשים מבלי להחליף את היחידה כולה.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> וודאו שהבקר שלכם מותקן באזור מאוורר ולא חסום לגמרי, כדי לאפשר פיזור חום יעיל.
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">4. בטיחות בבלימה: דיסקים, רפידות ותחזוקה</h2>
+                    <p>באופניים וקורקינטים חשמליים, מערכת הבלימה עובדת קשה יותר בגלל המשקל והמהירות הגבוהה. רפידות בלם נשחקות מהר יותר מבכל אופניים רגילים. חשוב לוודא שהדיסק ישר ושאין עליו סימני שמן או לכלוך הפוגעים בחיכוך.</p>
+                    <p style="margin-top: 15px;">אנחנו מתמחים בכיול בלמים הידראוליים ומכאניים, החלפת נוזל בלמים (Bleeding) והתאמת רפידות קרמיות עמידות יותר לשחיקה.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> אם אתם שומעים שריקות בזמן בלימה, ייתכן והרפידות הגיעו לסוף חייהן. אל תחכו לאיבוד כושר העצירה.
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">5. בניית סוללות MASTER: למה זה כדאי?</h2>
+                    <p>סוללות מדף רבות מיוצרות מתאים זולים עם אורך חיים קצר. בבנייה אישית של מאיר PRO REPAIR, אנחנו משתמשים בתאים של מותגים מובילים בלבד. כל תא נבדק בנפרד לפני ההלחמה כדי להבטיח איזון מושלם.</p>
+                    <p style="margin-top: 15px;">תהליך הבנייה כולל בידוד כפול, הלחמות נקודה (Spot Welding) מדויקות ושימוש ב-BMS חכם המגן על הסוללה מפני פריקת יתר וקצרים.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> סוללה שנבנתה נכון יכולה להחזיק פי 2 זמן מסוללה סינית פשוטה ולתת טווח נסיעה גדול בהרבה.
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">6. תחזוקת אופני BMX ופעלולים</h2>
+                    <p>אופני BMX חשופים לזעזועים ואימפקטים חזקים. השלדה, הג'נטים והשרשרת צריכים להיות במצב אופטימלי כדי למנוע שברים בזמן נחיתה. אנחנו מבצעים חיזוק צירים, כיוון חישורים (Sprokes) ובדיקת סדקים בשלדה.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> שרשרת נקייה ומשומנת לא רק מחזיקה יותר זמן, היא גם מונעת קפיצות ומגבירה את הביטחון שלכם בביצוע פעלולים.
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">7. החלפת סנסורים במנוע (Hall Sensors)</h2>
+                    <p>המנוע החשמלי מתקשר עם הבקר דרך סנסורים קטנים המדווחים על מיקום המנוע. כשאחד הסנסורים נשרף, המנוע עשוי לרעוד, להרעיש או פשוט לא להסתובב. החלפת סנסורים דורשת מיומנות גבוהה בהלחמה עדינה בתוך המנוע.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> לעיתים קרובות טכנאים יגידו לכם שצריך להחליף מנוע שלם, כשלמעשה החלפת סנסור פשוטה בעלות נמוכה תפתור את הבעיה.
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="card" style="margin-bottom: 50px; text-align: right;">
+                    <h2 style="color: var(--primary); margin-bottom: 20px;">8. השכרת פרימיום: איך לבחור כלי נכון?</h2>
+                    <p>כששוכרים כלי חשמלי, הבטיחות היא מעל הכל. וודאו שהכלי עובר תחזוקה שוטפת ושיש לו בלמים תקינים וסוללה בריאה. ב-מאיר PRO REPAIR, כל כלי להשכרה עובר בדיקת מעבדה מקיפה לפני כל מסירה.</p>
+                    <div style="background: var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px; border-right: 5px solid var(--primary);">
+                        <strong>💡 הטיפ של מאיר:</strong> אם אתם מתכננים נסיעות ארוכות, בקשו כלי עם סוללה משודרגת כדי שלא תיתקעו באמצע הדרך.
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
+
+    <footer style="margin-top: 50px;">
+        <div class="container">
+            <p style="text-align: center; opacity: 0.6;">© 2026 מאיר PRO REPAIR. כל המאמרים נכתבו על סמך ניסיון מקצועי בשטח.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script>lucide.createIcons();</script>

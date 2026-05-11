@@ -9,19 +9,19 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">מאיר <i data-lucide="wrench"></i> <span>PRO REPAIR</span></div>
+                <div class="logo">מאיר <span>PRO REPAIR</span></div>
                 <ul class="nav-links">
-                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="index.html">בית</a></li>
                     <li><a href="about.html">אודות</a></li>
-                    <li><a href="bikes.html">אופניים ו-BMX</a></li>
+                    <li><a href="bikes.html">אופניים</a></li>
                     <li><a href="scooters.html">קורקינטים</a></li>
                     <li><a href="batteries.html">סוללות</a></li>
                     <li><a href="gallery.html">גלריה</a></li>
                     <li><a href="articles.html">מאמרים</a></li>
-                    <li><a href="contact.html" class="active">צור קשר</a></li>
+                    <li><a href="contact.html" class="active">קשר</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,21 +37,21 @@
     <section class="section">
         <div class="container">
             <div class="grid">
-                <div class="card">
-                    <h2 style="margin-bottom: 25px;">הצהרת נגישות</h2>
-                    <p>אתר מאיר PRO REPAIR הונגש במלואו לכל 8 דפיו. אנו רואים חשיבות עליונה במתן שירות שוויוני ונגיש לכלל האוכלוסייה.</p>
-                    <ul style="margin-top: 25px; list-style: none;">
-                        <li style="margin-bottom: 12px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> תאימות לקוראי מסך (ARIA).</li>
-                        <li style="margin-bottom: 12px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> ניווט מקלדת מלא.</li>
-                        <li style="margin-bottom: 12px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> תפריט נגישות לשינוי ניגודיות וגודל טקסט.</li>
+                <div class="card reveal">
+                    <h2 style="margin-bottom: 25px; color: var(--primary);">הצהרת נגישות</h2>
+                    <p style="color: var(--text-muted);">אתר מאיר PRO REPAIR הונגש במלואו לכל 8 דפיו. אנו רואים חשיבות עליונה במתן שירות שוויוני ונגיש לכלל האוכלוסייה.</p>
+                    <ul style="margin-top: 25px; list-style: none; color: var(--text-muted);">
+                        <li style="margin-bottom: 12px;"><i data-lucide="check" style="color: var(--primary);"></i> תאימות לקוראי מסך.</li>
+                        <li style="margin-bottom: 12px;"><i data-lucide="check" style="color: var(--primary);"></i> ניווט מקלדת מלא.</li>
+                        <li style="margin-bottom: 12px;"><i data-lucide="check" style="color: var(--primary);"></i> תפריט נגישות ייעודי.</li>
                     </ul>
                 </div>
-                <div class="card">
-                    <h2 style="margin-bottom: 25px;">הזמנת שירות מהירה</h2>
+                <div class="card reveal" style="animation-delay: 0.2s;">
+                    <h2 style="margin-bottom: 25px; color: var(--primary);">השאירו פרטים</h2>
                     <form>
-                        <input type="text" placeholder="שם מלא" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid #e2e8f0; margin-bottom: 20px; font-size: 1rem;">
-                        <input type="tel" placeholder="מספר טלפון" style="width: 100%; padding: 18px; border-radius: 15px; border: 1px solid #e2e8f0; margin-bottom: 20px; font-size: 1rem;">
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 18px;">שלח הודעה</button>
+                        <input type="text" placeholder="שם מלא" style="width: 100%; padding: 18px; border-radius: 15px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); color: white; margin-bottom: 20px;">
+                        <input type="tel" placeholder="טלפון" style="width: 100%; padding: 18px; border-radius: 15px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); color: white; margin-bottom: 20px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">שלח פנייה</button>
                     </form>
                 </div>
             </div>
